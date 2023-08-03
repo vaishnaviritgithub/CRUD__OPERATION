@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+
+
+<style>
+
+
+
+body {
+		font-family: Arial,Helvetica,sans-serif;
+		background-image:url("flowers-276014_1920.jpg");
+	}
+	*{
+	box-sizing: border-box;
+	}
+	.container{
+		padding: 5px;
+		background-color: white;
+		width: 600px;
+		margin-left: 450px;
+		padding-left: 50px;
+	}
+	
+	input {
+		width: 500px;
+		padding: 10px;
+		margin: 10px 0 5px 0;
+		background: #f1f1f1;
+		height: 40px;
+	}
+	input[type=text]:focus,input[type=password]:focus {
+		background-color: #ddd;
+		outline: none;
+	
+	}
+	hr{
+	border: 1px solid #f1f1f1;
+	margin-bottom: 10px;
+	}
+	
+	.registerbtn{
+		background: rgb(220, 230, 17);
+		color: rgb(13, 119, 27);
+		padding: 10px 15px;
+		margin: 8px 0;
+		border: none;
+		cursor: pointer;
+		width: 500px;
+		opacity: 0.9;
+		text-align: center;
+		
+	}
+	.registerbtn:hover {
+		opacity: 1;
+	}
+	#in{
+		color: dodgerblue;
+		text-decoration: none;
+		font-size: 20px;
+		padding-left:40px;
+		padding-bottom: 30px;
+		padding-top: 5px;
+		background-color: black;
+		border: none;
+		
+	}
+   
+</style>
+
+
+
+</head>
+<body>
+
+<a href="table.html"></a>
+
+<a href="ShowDetails">View Employees</a>
+
+<form action="SaveDetailsSer"  method="POST">
+
+<div class="container">
+
+<h1 class="registerbtn">  Register  </h1>
+
+ <p>  Please fill in this form to create an account.</p>
+ 
+ <hr>
+ 
+ <label for="fname"><b>Full Name</b></label><br>
+ <input type="text" placeholder="Enter Name" name="name" required><br><br>
+ 
+
+<label for="email"><b>Email</b></label><br>
+ 
+<input type="text" placeholder="Enter Email" name="email"  required><br><br>
+
+<label for="psw"><b>Password</b></label><br>
+<input type="password" placeholder="Enter Password" name="password" required><br><br>
+
+
+
+<label for="psw"><b>Address</b></label><br>
+<input type="text" placeholder="Enter Address" name="address" required><br><br>
+
+<label class="label">City</label><br>
+<select name="city">
+
+
+<option disabled="disabled" selected="selected">Choose option</option>
+
+<option>Indore</option>
+<option>Bhopal</option>
+<option>Mumbai</option>
+
+
+
+</select><br><br>
+
+<label class="label">Country</label><br>
+<select name="country">
+<option disabled="disabled"  selected="selected">  Choose option</option>
+
+<option>India</option>
+<option>USA</option>
+<option>SA</option>
+
+
+
+</select>
+
+<hr>
+
+<button type="submit" class="registerbtn">Register</button>
+
+
+
+</div>
+
+
+</form>
+
+
+</body>
+</html>
